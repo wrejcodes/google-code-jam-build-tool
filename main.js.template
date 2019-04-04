@@ -8,18 +8,18 @@ const rl = readline.createInterface({
 let currentLine = null;
 let t;
 
-const output = (t, result = '') => {
-  console.log(`Case #${t + 1}: ${result}`);
-}
+const output = (c, result = '') => {
+  console.log(`Case #${c + 1}: ${result}`);
+};
 
-const calculateResult = (t, a) => {
-  output(t, a);
-}
+const calculateResult = (c, a) => {
+  output(c, a);
+};
 
 rl.on('line', (line) => {
   if (currentLine === null) {
       t = parseInt(line, 10);
-      currentLine = -1;
+      currentLine = - 1;
   } else {
   	// process the case
     const a = line.trim();
