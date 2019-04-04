@@ -41,7 +41,7 @@ foo
 - Exec
 	- `npm run exec -- questionName` will run the questionName code using in.txt for stdin and out.txt for stdout
 	- running `npm run exec -- foo` will essentially run this command `node foo/src/main.js < foo/src/in.txt > foo/src/out.txt`
-	- This allows you to copy/paste the sample input from the project description into `foo/src/in.txt` and compare `foo/src/out.txt` with the sample output given in the problem description after running `npm run exec -- foo`.
+	- This allows you to copy/paste the sample input from the problem description into `foo/src/in.txt` and compare `foo/src/out.txt` with the sample output given in the problem description after running `npm run exec -- foo`.
 - Build
 	- `npm run build -- questionName` will use the gulpfile to generate transpiled, minified javascript targetting the node version used by Google Code Jam (currently 4.8.2)
 	- `npm run build -- foo` will use `foo/src/main.js` to generate `foo/dist/main.min.js`
