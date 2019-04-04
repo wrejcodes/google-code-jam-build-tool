@@ -9,8 +9,9 @@
     "exec": "node commands.js run --name",
     "build": "node_modules/.bin/gulp build --src"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "William Jackson",
+  "repository": "https://github.com/wrejcodes/google-code-jam-build-tool",
+  "license": "MIT",
   "devDependencies": {
     "@babel/preset-env": "^7.4.3",
     "gulp": "^4.0.0",
