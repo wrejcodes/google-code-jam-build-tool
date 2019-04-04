@@ -1,0 +1,30 @@
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+let currentLine = null;
+let t;
+
+const output = (t, result = '') => {
+  console.log(`Case #${t + 1}: ${result}`);
+}
+
+const calculateResult = (t, a) => {
+  output(t, a);
+}
+
+rl.on('line', (line) => {
+  if (currentLine === null) {
+      t = parseInt(line, 10);
+      currentLine = -1;
+  } else {
+  	// process the case
+    const a = line.trim();
+    calculateResult(currentLine, a);
+  }
+  currentLine += 1;
+  if (currentLine === t) process.exit();
+});
