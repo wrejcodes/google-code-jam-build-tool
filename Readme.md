@@ -11,7 +11,7 @@ This tool is meant to help aid in JavaScript problem solving for Google Code Jam
 *If you run into issues using this tool feel free to open an issue but I might not get to it until after Code Jam has concluded for this year (2019)*
 
 ## To install this tool
-- First make sure you have node >= 6.4 installed.
+- First make sure you have node >= 10.0 installed.
 
 - Then, clone/download the repository:
 `git clone https://github.com/wrejcodes/google-code-jam-build-tool`
